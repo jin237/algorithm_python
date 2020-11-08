@@ -10,35 +10,35 @@ num = the number of problems on AtCorder Beginner Contest or ArCorder Regular Co
 problemname = the name of problems on AtCorder Beginner Contest or ArCorder Regular Contest
 
 - atcorderproblem
- - ABC
-  -  A_rank
-   - num_problemname.ipynb...
-  -  B_rank
-  -  C_rank
-  - (D_rank)
-  - (E_rank)
-  - (F_rank)
- -(ARC)
-  - (A_rank)
-  - (B_rank)
-  - (C_rank)
-  - (D_rank)
-  - (E_rank)
-  - (F_rank)
--algorithm_problem
- - fibonacci
- - fizz_buzz_problem
- - prime_num
- - radix_convert
- - vendingmachine_problem
+    - ABC
+        -  A_rank
+            - num_problemname.ipynb...
+        -  B_rank
+        -  C_rank
+        - (D_rank)
+        - (E_rank)
+        - (F_rank)
+   - ARC
+        - (A_rank)
+        - (B_rank)
+        - (C_rank)
+        - (D_rank)
+        - (E_rank)
+        - (F_rank)
+- algorithm_problem
+   - fibonacci
+   - fizz_buzz_problem
+   - prime_num
+   - radix_convert
+   - vendingmachine_problem
  
 
 # 参考資料
-[AtCorder URL] (https://atcoder.jp/)
+[AtCorder URL](https://atcoder.jp/)
 
-[AtCorder Problems URL] (https://kenkoooo.com/atcoder/#/table/)
+[AtCorder Problems URL](https://kenkoooo.com/atcoder/#/table/)
 
-[Pythonではじめるアルゴリズム入門ー伝統的なアルゴリズムで学ぶ定石と計算量] (https://www.amazon.co.jp/Python%E3%81%A7%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%85%A5%E9%96%80-%E4%BC%9D%E7%B5%B1%E7%9A%84%E3%81%AA%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A7%E5%AD%A6%E3%81%B6%E5%AE%9A%E7%9F%B3%E3%81%A8%E8%A8%88%E7%AE%97%E9%87%8F-%E5%A2%97%E4%BA%95-%E6%95%8F%E5%85%8B-ebook/dp/B0822N5RMS/ref=sr_1_2?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&dchild=1&keywords=python+%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0&qid=1603549421&sr=8-2) 
+[Pythonではじめるアルゴリズム入門ー伝統的なアルゴリズムで学ぶ定石と計算量](https://www.amazon.co.jp/Python%E3%81%A7%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%85%A5%E9%96%80-%E4%BC%9D%E7%B5%B1%E7%9A%84%E3%81%AA%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A7%E5%AD%A6%E3%81%B6%E5%AE%9A%E7%9F%B3%E3%81%A8%E8%A8%88%E7%AE%97%E9%87%8F-%E5%A2%97%E4%BA%95-%E6%95%8F%E5%85%8B-ebook/dp/B0822N5RMS/ref=sr_1_2?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&dchild=1&keywords=python+%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0&qid=1603549421&sr=8-2) 
 - 増井 敏克 著
 - 形式：書籍
 - 発売日：2020年01月24日
@@ -48,7 +48,7 @@ problemname = the name of problems on AtCorder Beginner Contest or ArCorder Regu
 - 分類：プログラミング・開発
 
 
-# 目次
+# 目次 (Pythonではじめるアルゴリズム入門ー伝統的なアルゴリズムで学ぶ定石と計算量)
 ### 第1章　Pythonの基本とデータ構造を知る
 - 1.1　プログラミング言語の選択
 - 1.2　プログラミング言語Pythonの概要
