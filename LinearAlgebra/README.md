@@ -19,22 +19,20 @@ amazon: https://www.amazon.co.jp/dp/B01I4TPXLE/ref=dp-kindle-redirect?_encoding=
 
 スカラー積は、
 
-```math
-av,bw
-```
+<img src="https://latex.codecogs.com/gif.latex?av,bw">
+
 のように掛けられたもの。
 
 ベクトル和は、
 
-```math
-v + w
-```
+<img src="https://latex.codecogs.com/gif.latex?v+w">
+
 のように足されたもの。
 これら二つの組み合わせを***線形結合***という。よって、
 
-```math
-av + bw
-```
+<img src="https://latex.codecogs.com/gif.latex?av+bw">
+
+
 のような形のことである。ちなみにこれは項数が2つなので、***2次元面を張る***。（v=w>の場合、違うが。）
 
 pythonで実装
@@ -78,12 +76,14 @@ print(linearcomb)
 Markdown記法による記述なので、*などの積を表すものについて一部出来ていないところがある。また、数式については、`バックフォード`の部分については、数式の見やすさを重視するためであり、コードの一部ではない。
 
 # 長さと内積
-v = (v₁, v₂)
-w = (w₁, w₂)
+<img src="https://latex.codecogs.com/gif.latex?v&space;=&space;(v_{1},&space;v_{2}),&space;w&space;=&space;(w_{1},&space;w_{2})">
+
 というベクトルとする。
 ### 内積
 内積は、***v・w***と表す。ほかにも***ドット積と***呼ぶこともある。
-`v・w = v₁w₁ + v₂*w₂`
+
+<img src="https://latex.codecogs.com/gif.latex?v\cdot&space;w&space;=&space;v_{1}w_{1}&space;&plus;&space;v_{2}*w_{2}">
+
 となる。
 このとき、***v・w = 0 であれば 直交する***。
 
@@ -158,9 +158,8 @@ juliaのコードに関しては、内積計算では無理やり持って行っ
 # 行列
 行列について、少し深く触れてみる。基本的に、
 
-```math
-A x = b
-```
+<img src="https://latex.codecogs.com/gif.latex?Ax=b">
+
 という、形にするのがスタンダード
 
 ### 行列について、
@@ -175,107 +174,35 @@ u = (1, 2, 3)のようにあらわしてきたのは、列ベクトルのこと�
 とする。
 本来であれば、以下のように表記しなければならない。
 
-```math
-u =
-\begin{bmatrix}
-1 \\
-2 \\
-3
-\end{bmatrix}
-```
+<img src="https://latex.codecogs.com/gif.latex?u&space;=&space;\begin{bmatrix}&space;1&space;\\&space;2&space;\\&space;3&space;\end{bmatrix}">
 ただし、この記事はマークダウン方式により、めんどくさいので今まで通りに記述する。
 
 ### 線形方程式とベクトル
 ex)連立方程式について
 
-```math
-\begin{matrix}
- x - 2y =  1 \\
-3x + 2y = 11
-\end{matrix}
-```
+<img src="https://latex.codecogs.com/gif.latex?\begin{matrix}&space;x&space;-&space;2y&space;=&space;1&space;\\&space;3x&space;&plus;&space;2y&space;=&space;11&space;\end{matrix}">
+
 を列ベクトルで考える。(= 線形的思考)
 線形方程式のメリットは負数の指揮を一つの式で表すことができること。
 以下のように変形できる、
 
-```math
-x
-\begin{bmatrix}
-1 \\
-3
-\end{bmatrix}
-+
-y
-\begin{bmatrix}
--2 \\
-2
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 \\
-11
-\end{bmatrix}
-```
+<img src="https://latex.codecogs.com/gif.latex?x&space;\begin{bmatrix}&space;1&space;\\&space;3&space;\end{bmatrix}&space;&plus;&space;y&space;\begin{bmatrix}&space;-2&space;\\&space;2&space;\end{bmatrix}&space;=&space;\begin{bmatrix}&space;1&space;\\&space;11&space;\end{bmatrix}">
 
 この時、
 
-```math
-u =
-\begin{bmatrix}
-1 \\
-3
-\end{bmatrix}
-,
-v = 
-\begin{bmatrix}
--2 \\
-2
-\end{bmatrix}
-,
-b = 
-\begin{bmatrix}
-1 \\
-11
-\end{bmatrix}
-```
+<img src="https://latex.codecogs.com/gif.latex?u&space;=&space;\begin{bmatrix}&space;1&space;\\&space;3&space;\end{bmatrix}&space;,&space;v&space;=&space;\begin{bmatrix}&space;-2&space;\\&space;2&space;\end{bmatrix}&space;,&space;b&space;=&space;\begin{bmatrix}&space;1&space;\\&space;11&space;\end{bmatrix}">
+
 とおける。これは、u, vについてまとめてAとするとき、以下のようにAx=bの形で書くことができる。
 
-```math
-Ax =
-\begin{bmatrix}
-1 & -2\\
-3 & 2
-\end{bmatrix}
-\begin{bmatrix}
-x\\
-y
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 \\
-11
-\end{bmatrix}
-= b
-```
+<img src="https://latex.codecogs.com/gif.latex?Ax&space;=&space;\begin{bmatrix}&space;1&space;&&space;-2\\&space;3&space;&&space;2&space;\end{bmatrix}&space;\begin{bmatrix}&space;x\\&space;y&space;\end{bmatrix}&space;=&space;\begin{bmatrix}&space;1&space;\\&space;11&space;\end{bmatrix}&space;=&space;b">
+
 となる。この線形方程式で、あてはまるx, yを考える必要がある。
 ちなみ解析学的に考えると、直線同士の交点を示す。
 
 # 行列の計算(プログラム)
 
-```math
-a =
-\begin{bmatrix}
-0 & 1 & 2 \\
-1 & 2 & 3
-\end{bmatrix}
-,
-b =
-\begin{bmatrix}
-2 & 1 \\
-2 & 1\\
-2 & 1
-\end{bmatrix}
-```
+<img src="https://latex.codecogs.com/gif.latex?a&space;=&space;\begin{bmatrix}&space;0&space;&&space;1&space;&&space;2&space;\\&space;1&space;&&space;2&space;&&space;3&space;\end{bmatrix}&space;,&space;b&space;=&space;\begin{bmatrix}&space;2&space;&&space;1&space;\\&space;2&space;&&space;1\\&space;2&space;&&space;1&space;\end{bmatrix}">
+
 とする。行列の計算を行う。
 
 ### Pythonのコード
